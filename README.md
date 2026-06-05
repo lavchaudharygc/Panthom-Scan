@@ -12,14 +12,43 @@
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-00d4ff?style=for-the-badge)]()
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)]()
 [![Version](https://img.shields.io/badge/Version-5.0-ff3860?style=for-the-badge)]()
-[![Stars](https://img.shields.io/github/stars/YOUR_USERNAME/phantom-scan?style=for-the-badge&color=ffd700)]()
+[![Stars](https://img.shields.io/github/stars/lavchaudharygc/Panthom-Scan?style=for-the-badge&color=ffd700)]()
 
-**The most complete open-source network security scanner built in pure Python.**  
+**The most complete open-source network security scanner built in pure Python.**
 Port Scanner · Vulnerability Assessment · SYN Stealth · Brute Force · Topology Map · Shodan · NVD · Docker
 
-[📥 Download](#installation) · [📖 Docs](#usage) · [🐳 Docker](#docker) · [📸 Screenshots](#screenshots)
+[📥 Download](#installation) · [📖 Docs](#usage) · [🐳 Docker](#docker) · [▶️ Watch Demo](#-demo-video) · [📸 Screenshots](#screenshots)
 
 </div>
+
+---
+
+## ▶️ Demo Video
+
+<div align="center">
+
+### 🎬 Full Tool Walkthrough — Watch on YouTube
+
+[![Phantom Scan v5.0 — Full Demo](https://img.youtube.com/vi/T6rXwX3oRz8/maxresdefault.jpg)](https://youtu.be/T6rXwX3oRz8)
+
+> 🔊 **Click the thumbnail above to watch the full demo video**
+> Language: Hinglish (Hindi + English) · Suitable for all levels
+
+</div>
+
+### ⏱️ Video Timestamps — Jump to Any Feature
+
+| Time | Section | What You'll See |
+|------|---------|----------------|
+| [0:36](https://youtu.be/T6rXwX3oRz8?t=36) | 🎯 Why This Tool? | The problem Phantom Scan solves |
+| [0:37](https://youtu.be/T6rXwX3oRz8?t=37) | 👁️ First Look | Complete GUI overview |
+| [1:39](https://youtu.be/T6rXwX3oRz8?t=99) | 🔍 Live Scan Demo | Real target scan with CVE detection |
+| [7:34](https://youtu.be/T6rXwX3oRz8?t=454) | ⚡ Scan Types | TCP · UDP · SYN Stealth explained |
+| [9:06](https://youtu.be/T6rXwX3oRz8?t=546) | 🗺️ Topology Map | Interactive network visualization |
+| [11:08](https://youtu.be/T6rXwX3oRz8?t=668) | 💣 Brute Force | FTP · SSH · HTTP credential testing |
+| [14:02](https://youtu.be/T6rXwX3oRz8?t=842) | 📅 Scheduler | Automated recurring scans setup |
+| [16:50](https://youtu.be/T6rXwX3oRz8?t=1010) | 🌐 Shodan + NVD | Live IP intelligence + CVE updates |
+| [20:30](https://youtu.be/T6rXwX3oRz8?t=1230) | 🎬 Outro | Summary + GitHub + next steps |
 
 ---
 
@@ -108,7 +137,7 @@ Port Scanner · Vulnerability Assessment · SYN Stealth · Brute Force · Topolo
 ```bash
 # 1. Clone
 git clone https://github.com/lavchaudharygc/Panthom-Scan
-cd phantom-scan
+cd Panthom-Scan
 
 # 2. (Optional) Install extra features
 pip install reportlab   # PDF export
@@ -302,7 +331,8 @@ MIT License — see [LICENSE](LICENSE) for details. Free for personal, education
 
 ⭐ **Star this repo if it helped you!** ⭐
 
-[![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME/phantom-scan?style=social)](https://github.com/lavchaudharygc/Panthom-Scan)
+[![GitHub stars](https://img.shields.io/github/stars/lavchaudharygc/Panthom-Scan?style=social)](https://github.com/lavchaudharygc/Panthom-Scan)
+[![YouTube](https://img.shields.io/badge/YouTube-Watch%20Demo-FF0000?style=social&logo=youtube)](https://youtu.be/T6rXwX3oRz8)
 
 *"Security is not a product, but a process."* — Bruce Schneier
 
