@@ -1,0 +1,16 @@
+# PHANTOM SCAN v5.0 — Python Dependencies
+#
+# CORE: No dependencies required — uses Python stdlib only
+# OPTIONAL: Install below for extra features
+
+# PDF report export (optional — needed for ↓PDF button)
+reportlab>=4.0.0
+
+# SSH brute-force module (optional — needed for SSH in Brute Force tab)
+paramiko>=3.0.0
+
+# Shodan API client — alternative to raw urllib (optional)
+# shodan>=1.28.0
+
+# Rich terminal output for phantom_cli.py
+rich>=13.0.0

@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+  # ── Headless CLI scanner ──────────────────────────────────────
+  phantom-cli:
+    build: .
+    container_name: phantom_scan_cli
+    network_mode: host          # Full host network access for scanning
+    cap_add:
+      - NET_RAW                 # Required for SYN stealth scan
+      - NET_ADMIN
+    command: ["--target", "scanme.nmap.org", "--ports", "1-1024", "--threads", "200"]
+    volumes:
+      - ./reports:/app/reports  # Auto-save reports here
+
+  # ── GUI mode via X11 forwarding (Linux host) ─────────────────
+  phantom-gui:
+    build: .
+    container_name: phantom_scan_gui
+    network_mode: host
+    cap_add:
+      - NET_RAW
+      - NET_ADMIN
+    environment:
+      - DISPLAY=${DISPLAY}
+      - XAUTHORITY=/tmp/.docker.xauth
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - /tmp/.docker.xauth:/tmp/.docker.xauth:rw
+      - ./reports:/app/reports
+    command: ["python3", "phantom_scan.py"]
+    profiles:
+      - gui
